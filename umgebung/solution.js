@@ -29,3 +29,5 @@ function directory() {
     return `Pfad der js datei ist:` + process.argv;
 }
 console.log(directory());
+
+//4.2 Umgebung unklar!!
