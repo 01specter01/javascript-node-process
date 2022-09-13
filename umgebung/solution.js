@@ -9,4 +9,15 @@ console.log("----------------------");
 console.log(
     "2. Schreibe eine Funktion, die das Betriebssystem (und die Architektur) ausgibt."
 );
-console.log(process.);
+console.log(
+    `This processor architecture is ` +
+        process.arch +
+        ` ------------------ ` +
+        `The OS is: ` +
+        process.platform
+);
+console.log("----------------------");
+
+console.log(
+    "3. Finde mit einer Funktion heraus, in welchem Pfad das Skript gerade ausgeführt wird."
+);
