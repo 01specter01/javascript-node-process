@@ -21,3 +21,4 @@ console.log("----------------------");
 console.log(
     "3. Finde mit einer Funktion heraus, in welchem Pfad das Skript gerade ausgeführt wird."
 );
+console.log(`Pfad der js datei ist:` + process.argv);
