@@ -31,4 +31,17 @@ function directory() {
 console.log(directory());
 
 //4.2 Umgebung unklar!!
-console.log(process.argv);
+function newFunction(fun) {
+    fun();
+}
+newFunction(node);
+
+function newFunction(fun) {
+    fun();
+}
+newFunction(os);
+
+function newFunction(fun) {
+    fun();
+}
+newFunction(directory);
