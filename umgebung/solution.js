@@ -36,12 +36,19 @@ function newFunction(fun) {
 }
 newFunction(node);
 
-function newFunction(fun) {
-    fun();
-}
 newFunction(os);
 
-function newFunction(fun) {
-    fun();
-}
 newFunction(directory);
+console.log(process.argv);
+
+const printNodeVersion = () => console.log(`Node: ${process.version}`);
+const printOSDetails = () =>
+    console.log(`OS: ${process.platform} (${process.arch})`);
+const printPwd = () => console.log(`Pfad: ${process.mainModule.path}`);
+
+const [nodePath, scriptPath, ...functions] = process.argv;
+console.log(functions);
+
+if (functions.includes("node")) printNodeVersion();
+if (functions.includes("os")) printOSDetails();
+if (functions.includes("directory")) printPwd();
